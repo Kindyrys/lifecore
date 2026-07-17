@@ -34,3 +34,33 @@
 ### Next step
 
 - Create first simple HomeController.
+## 2026-07-17
+
+### What I learned
+
+- What a Spring MVC Controller is.
+- How @Controller works.
+- How @GetMapping("/") maps a browser request.
+- How return "index" connects Controller with Thymeleaf template.
+- Where Spring Boot searches HTML templates.
+
+### What I practiced
+
+- Created HomeController.
+- Created index.html.
+- Opened the application in the browser.
+
+### What is unclear
+
+- Need more practice with Controller and View flow.
+
+### What I need to repeat
+
+- @Controller
+- @GetMapping
+- return view name
+- templates folder
+
+### Next step
+
+- Commit base MVC structure.
