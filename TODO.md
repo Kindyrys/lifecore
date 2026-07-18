@@ -26,7 +26,8 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Create first simple HomeController
 - [x] Create first Thymeleaf page
 - [x] Verify application opens in browser
-- [ ] Commit base MVC structure
+- [x] Commit base MVC structure
+- [x] Improve index.html with Bootstrap layout
 
 ---
 

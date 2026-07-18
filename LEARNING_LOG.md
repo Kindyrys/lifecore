@@ -64,3 +64,30 @@
 ### Next step
 
 - Commit base MVC structure.
+## 2026-07-18
+
+### What I learned
+
+- What Bootstrap is.
+- How Bootstrap CSS is connected through CDN.
+- How Bootstrap classes change HTML appearance.
+- What container, mt-5, text-center, card, card-body, card-title and card-text do.
+
+### What I practiced
+
+- Improved index.html with Bootstrap.
+- Created simple module cards for Finance, Tasks and Habits.
+- Tested spacing classes like mt-3 and mt-5.
+
+### What is unclear
+
+- Need more practice reading Bootstrap documentation.
+
+### What I need to repeat
+
+- Bootstrap class syntax.
+- Difference between regular HTML and Bootstrap-styled HTML.
+
+### Next step
+
+- Start Finance module with Transaction entity.
