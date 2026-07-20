@@ -91,3 +91,38 @@
 ### Next step
 
 - Start Finance module with Transaction entity.
+## 2026-07-18
+
+### What I learned
+
+- What JPA Entity is.
+- How @Entity maps a Java class to database.
+- What @Id means.
+- How @GeneratedValue works.
+- Why BigDecimal is used for money.
+- Why LocalDate is used for dates.
+- How enum is stored with @Enumerated(EnumType.STRING).
+
+### What I practiced
+
+- Created Transaction entity.
+- Added id field.
+- Added amount, description, transactionDate and type fields.
+- Used TransactionType enum inside Entity.
+
+### What is unclear
+
+- Need more practice with JPA annotations.
+
+### What I need to repeat
+
+- @Entity
+- @Id
+- @GeneratedValue
+- @Enumerated(EnumType.STRING)
+- BigDecimal
+- LocalDate
+
+### Next step
+
+- Add constructors, getters and setters to Transaction entity.

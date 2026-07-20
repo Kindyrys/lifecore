@@ -28,6 +28,8 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Verify application opens in browser
 - [x] Commit base MVC structure
 - [x] Improve index.html with Bootstrap layout
+- [x] Create TransactionType ENUM
+- [x] Create Transaction entity
 
 ---
 
