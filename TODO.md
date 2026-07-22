@@ -30,6 +30,8 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Improve index.html with Bootstrap layout
 - [x] Create TransactionType ENUM
 - [x] Create Transaction entity
+- [x] Create Category entity
+- [x] Create TransactionRepository
 
 ---
 

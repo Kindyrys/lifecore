@@ -160,3 +160,32 @@
 ### Next step
 
 - Run application and check if Transaction table is created in PostgreSQL.
+## 2026-07-18
+
+### What I learned
+
+- How @Table defines the database table name.
+- How Hibernate creates a table from an Entity.
+- How ddl-auto=update updates the database schema.
+- How to verify created tables in pgAdmin.
+
+### What I practiced
+
+- Added @Table(name = "transactions") to Transaction entity.
+- Ran Spring Boot application.
+- Verified that transactions table was created in PostgreSQL.
+
+### What is unclear
+
+- Need more practice reading Hibernate SQL logs.
+
+### What I need to repeat
+
+- @Entity
+- @Table
+- ddl-auto=update
+- Hibernate table creation
+
+### Next step
+
+- Create TransactionRepository.
