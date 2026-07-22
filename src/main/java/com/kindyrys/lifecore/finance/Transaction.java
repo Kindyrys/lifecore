@@ -23,4 +23,55 @@ public class Transaction {
 
     @Enumerated(EnumType.STRING)
     private TransactionType type;
+
+    public Transaction() {
+    }
+
+    public Transaction(BigDecimal amount, String description, LocalDate transactionDate, TransactionType type) {
+        this.amount = amount;
+        this.description = description;
+        this.transactionDate = transactionDate;
+        this.type = type;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public LocalDate getTransactionDate() {
+        return transactionDate;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setTransactionDate(LocalDate transactionDate) {
+        this.transactionDate = transactionDate;
+    }
+
+    public void setType(TransactionType type) {
+        this.type = type;
+    }
 }
+

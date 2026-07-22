@@ -126,3 +126,37 @@
 ### Next step
 
 - Add constructors, getters and setters to Transaction entity.
+
+## 2026-07-18
+
+### What I learned
+
+- What constructors are.
+- Why JPA needs an empty constructor.
+- Why Entity constructor should not include generated id.
+- What getters and setters are.
+- Why fields should be private.
+- What encapsulation means.
+
+### What I practiced
+
+- Added empty constructor to Transaction.
+- Added constructor without id.
+- Added getters and setters.
+- Fixed method access modifier from private to public.
+
+### What is unclear
+
+- Need more practice with constructors and encapsulation.
+
+### What I need to repeat
+
+- constructor syntax
+- this.field = parameter
+- getter syntax
+- setter syntax
+- private fields
+
+### Next step
+
+- Run application and check if Transaction table is created in PostgreSQL.
