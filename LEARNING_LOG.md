@@ -189,3 +189,36 @@
 ### Next step
 
 - Create TransactionRepository.
+- ## 2026-08-19
+
+### What I learned
+
+- What a Repository is in Spring Data JPA.
+- Why Repository is created as an interface.
+- What JpaRepository provides.
+- What JpaRepository<Transaction, Long> means.
+- How Spring creates Repository implementation automatically.
+
+### What I practiced
+
+- Created TransactionRepository.
+- Extended JpaRepository.
+- Started the application successfully after adding Repository.
+
+### What is unclear
+
+- Need more practice with Spring Data Repository methods.
+
+### What I need to repeat
+
+- Repository layer
+- interface vs class
+- JpaRepository
+- save()
+- findAll()
+- findById()
+- deleteById()
+
+### Next step
+
+- Create first FinanceService.
