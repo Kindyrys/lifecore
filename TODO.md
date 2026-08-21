@@ -32,6 +32,8 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Create Transaction entity
 - [x] Create Category entity
 - [x] Create TransactionRepository
+- [x] Create FinanceService
+- [x] Add getAllTransactions method
 
 ---
 

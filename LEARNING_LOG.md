@@ -222,3 +222,36 @@
 ### Next step
 
 - Create first FinanceService.
+- ## 2026-08-21
+
+### What I learned
+
+- What a Service layer is.
+- Why Controller should not work directly with Repository.
+- What constructor injection is.
+- How Service uses Repository.
+- What List<Transaction> means.
+- How findAll() reads all records from the database.
+
+### What I practiced
+
+- Created FinanceService.
+- Injected TransactionRepository through constructor.
+- Added getAllTransactions() method.
+- Used transactionRepository.findAll().
+
+### What is unclear
+
+- Need more practice with Service layer responsibilities.
+
+### What I need to repeat
+
+- @Service
+- constructor injection
+- private final fields
+- List<Transaction>
+- findAll()
+
+### Next step
+
+- Create FinanceController for displaying transactions.
