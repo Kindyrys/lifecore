@@ -255,3 +255,36 @@
 ### Next step
 
 - Create FinanceController for displaying transactions.
+- ## 2026-08-30
+
+### What I learned
+
+- What a Controller is in Spring MVC.
+- How @Controller works.
+- How @GetMapping handles browser requests.
+- How controller return values map to Thymeleaf templates.
+- Why templates are stored in src/main/resources/templates.
+
+### What I practiced
+
+- Created FinanceController.
+- Injected FinanceService into Controller.
+- Added /finance/transactions endpoint.
+- Created transactions.html template.
+- Opened the transactions page in the browser.
+
+### What is unclear
+
+- Need more practice with how Spring resolves template paths.
+
+### What I need to repeat
+
+- @Controller
+- @GetMapping
+- return view name
+- Thymeleaf template path
+- Controller → Service → Repository flow
+
+### Next step
+
+- Pass transactions from FinanceService to the HTML page using Model.

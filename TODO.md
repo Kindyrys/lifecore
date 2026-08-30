@@ -34,6 +34,9 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Create TransactionRepository
 - [x] Create FinanceService
 - [x] Add getAllTransactions method
+- [x] Create FinanceController
+- [x] Add transactions page endpoint
+- [x] Create transactions HTML template
 
 ---
 
