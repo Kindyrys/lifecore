@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Transactions</title>
@@ -8,5 +8,29 @@
 <body class="container mt-5">
 <h1>Transactions</h1>
 <p>Finance transactions will be displayed here.</p>
+<p th:if="${#lists.isEmpty(transactions)}">
+    No transactions yet.
+</p>
+<table class="table table-striped" th:if="${!#lists.isEmpty(transactions)}">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="transaction : ${transaction}">
+        <td th:text="${transaction.id}"></td>
+        <td th:text="${transaction.amount}"></td>
+        <td th:text="${transaction.description}"></td>
+        <td th:text="${transaction.transactionDate}"></td>
+        <td th:text="${transaction.type}"></td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>

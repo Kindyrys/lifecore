@@ -288,3 +288,39 @@
 ### Next step
 
 - Pass transactions from FinanceService to the HTML page using Model.
+- ## 2026-08-31
+
+### What I learned
+
+- What Model is in Spring MVC.
+- How Controller passes data to Thymeleaf template.
+- What model.addAttribute() does.
+- How Thymeleaf reads data from Model.
+- How th:if works.
+- How th:each works.
+- How th:text displays object fields.
+
+### What I practiced
+
+- Passed transactions from FinanceController to transactions.html.
+- Used financeService.getAllTransactions().
+- Added Thymeleaf namespace.
+- Displayed "No transactions yet" when the list is empty.
+- Added a table for future transactions.
+
+### What is unclear
+
+- Need more practice with th:each syntax.
+
+### What I need to repeat
+
+- Model
+- model.addAttribute()
+- ${transactions}
+- th:if
+- th:each
+- th:text
+
+### Next step
+
+- Add a simple form for creating a transaction.
