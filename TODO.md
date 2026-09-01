@@ -40,6 +40,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Pass transactions to template using Model
 - [x] Display empty transactions message
 - [x] Add transactions table template
+- [x] Add transaction form UI
 
 ---
 

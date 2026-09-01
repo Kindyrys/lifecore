@@ -324,3 +324,41 @@
 ### Next step
 
 - Add a simple form for creating a transaction.
+## 2026-09-01
+
+### What I learned
+
+- What HTML form is.
+- How input fields work.
+- What name attribute means.
+- How number input works.
+- What step="0.01" means.
+- How select and option work.
+- Difference between visible option text and option value.
+
+### What I practiced
+
+- Added transaction form to transactions.html.
+- Added amount input.
+- Added description input.
+- Added transaction date input.
+- Added transaction type select.
+- Checked that the form is displayed in the browser.
+
+### What is unclear
+
+- Need more practice with form submission using POST.
+
+### What I need to repeat
+
+- form
+- input
+- name
+- type
+- step
+- select
+- option value
+
+### Next step
+
+- Add POST endpoint for creating a transaction.
