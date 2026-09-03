@@ -16,4 +16,8 @@ public class FinanceService {
     public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll();
     }
+
+    public void saveTransaction(Transaction transaction) {
+        transactionRepository.save(transaction);
+    }
 }

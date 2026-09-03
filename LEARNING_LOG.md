@@ -362,3 +362,42 @@
 ### Next step
 
 - Add POST endpoint for creating a transaction.
+## 2026-09-03
+
+### What I learned
+
+- How POST form submission works.
+- What @PostMapping does.
+- What @ModelAttribute does.
+- How Spring maps form fields to an Entity object.
+- Why form field name attributes must match object fields.
+- Why CSRF token is required for POST requests with Spring Security.
+- Why redirect is used after saving data.
+
+### What I practiced
+
+- Added saveTransaction() method to FinanceService.
+- Added POST /finance/transactions endpoint.
+- Connected HTML form to backend using method="post".
+- Added th:action to the form.
+- Added CSRF hidden input.
+- Saved a transaction from the browser into PostgreSQL.
+- Verified that saved transactions appear in the table.
+
+### What is unclear
+
+- Need more practice with @ModelAttribute and form binding.
+
+### What I need to repeat
+
+- method="post"
+- th:action
+- CSRF token
+- @PostMapping
+- @ModelAttribute
+- redirect
+- Repository save()
+
+### Next step
+
+- Improve transaction form layout and add basic validation.

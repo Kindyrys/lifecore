@@ -41,6 +41,11 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Display empty transactions message
 - [x] Add transactions table template
 - [x] Add transaction form UI
+- [x] Add saveTransaction method
+- [x] Add POST endpoint for creating transaction
+- [x] Connect transaction form to POST endpoint
+- [x] Add CSRF token to transaction form
+- [x] Save transaction from form to PostgreSQL
 
 ---
 
