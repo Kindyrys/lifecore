@@ -46,6 +46,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Connect transaction form to POST endpoint
 - [x] Add CSRF token to transaction form
 - [x] Save transaction from form to PostgreSQL
+- [x] Add basic frontend validation to transaction form
 
 ---
 

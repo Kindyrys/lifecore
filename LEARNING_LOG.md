@@ -401,3 +401,35 @@
 ### Next step
 
 - Improve transaction form layout and add basic validation.
+## 2026-09-04
+
+### What I learned
+
+- What frontend form validation is.
+- How required works in HTML forms.
+- How min="0.01" limits number input.
+- Why select needs an empty default option.
+- Why CSRF token must stay inside the POST form.
+
+### What I practiced
+
+- Added required validation to amount, description, date and type fields.
+- Added min="0.01" to amount.
+- Added empty default option for transaction type.
+- Tested that browser blocks empty form submission.
+
+### What is unclear
+
+- Need more practice with backend validation.
+
+### What I need to repeat
+
+- required
+- min
+- select default option
+- frontend validation
+- backend validation
+
+### Next step
+
+- Add backend validation for Transaction.

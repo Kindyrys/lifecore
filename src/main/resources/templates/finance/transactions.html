@@ -35,19 +35,20 @@
     <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
     <div class="mb-3">
         <label class="form-label">Amount</label>
-        <input type="number" step="0.01" class="form-control" name="amount">
+        <input type="number" step="0.01" min="0.01" class="form-control" name="amount" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Description</label>
-        <input type="text" class="form-control" name="description">
+        <input type="text" class="form-control" name="description" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Date</label>
-        <input type="date" class="form-control" name="transactionDate">
+        <input type="date" class="form-control" name="transactionDate" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Type</label>
-        <select class="form-select" name="type">
+        <select class="form-select" name="type" required>
+            <option value="">Select type</option>
             <option value="INCOME">Income</option>
             <option value="EXPENSE">Expense</option>
         </select>
