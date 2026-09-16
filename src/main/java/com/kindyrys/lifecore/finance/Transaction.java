@@ -7,6 +7,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -19,10 +22,17 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
+    @DecimalMin("0.01")
     private BigDecimal amount;
+
+    @NotBlank
     private String description;
+
+    @NotNull
     private LocalDate transactionDate;
 
+    @NotNull
     @Enumerated(EnumType.STRING)
     private TransactionType type;
 

@@ -47,6 +47,10 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Add CSRF token to transaction form
 - [x] Save transaction from form to PostgreSQL
 - [x] Add basic frontend validation to transaction form
+- [x] Add backend validation annotations to Transaction
+- [x] Add @Valid and BindingResult to transaction POST endpoint
+- [x] Bind transaction form with th:object
+- [x] Replace form name attributes with th:field
 
 ---
 

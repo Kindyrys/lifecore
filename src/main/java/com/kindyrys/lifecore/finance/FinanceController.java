@@ -5,6 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.validation.BindingResult;
+
+import jakarta.validation.Valid;
 
 @Controller
 public class FinanceController {
@@ -18,11 +21,18 @@ public class FinanceController {
     @GetMapping("/finance/transactions")
     public String showTransactionsPage(Model model) {
         model.addAttribute("transactions", financeService.getAllTransactions());
+        model.addAttribute("transaction", new Transaction());
         return "finance/transactions";
     }
 
     @PostMapping("/finance/transactions")
-    public String addTransaction(@ModelAttribute Transaction transaction) {
+    public String addTransaction(@Valid @ModelAttribute Transaction transaction,
+                                 BindingResult bindingResult,
+                                 Model model) {
+        if (bindingResult.hasErrors()) {
+            model.addAttribute("transactions", financeService.getAllTransactions());
+            return "finance/transactions";
+        }
         financeService.saveTransaction(transaction);
         return "redirect:/finance/transactions";
     }

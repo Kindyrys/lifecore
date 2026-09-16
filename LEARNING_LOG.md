@@ -433,3 +433,44 @@
 ### Next step
 
 - Add backend validation for Transaction.
+## 2026-09-16
+
+### What I learned
+
+- What backend validation is.
+- How @NotNull works.
+- How @NotBlank works.
+- How @DecimalMin works.
+- Why frontend validation is not enough.
+- How @Valid starts validation in Controller.
+- What BindingResult does.
+- Why validation errors should return template, not redirect.
+- How th:object binds a form to a Java object.
+- How th:field binds input fields to object fields.
+
+### What I practiced
+
+- Added validation annotations to Transaction.
+- Added @Valid to POST endpoint.
+- Added BindingResult to handle validation errors.
+- Added transaction object to Model.
+- Added th:object to the form.
+- Replaced name attributes with th:field.
+- Tested that transaction form still saves data.
+
+### What is unclear
+
+- Need more practice with BindingResult and displaying field-level errors.
+
+### What I need to repeat
+
+- @Valid
+- BindingResult
+- @ModelAttribute
+- th:object
+- th:field
+- validation error flow
+
+### Next step
+
+- Display field-level validation error messages in the transaction form.
