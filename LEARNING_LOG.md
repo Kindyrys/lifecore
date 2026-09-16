@@ -474,3 +474,36 @@
 ### Next step
 
 - Display field-level validation error messages in the transaction form.
+- ## 2026-09-16
+
+### What I learned
+
+- How to display field-level validation errors in Thymeleaf.
+- How #fields.hasErrors() works.
+- How th:errors displays validation messages.
+- Difference between general form errors and field-specific errors.
+- Why validation messages should be shown near input fields.
+
+### What I practiced
+
+- Added error message for amount.
+- Added error message for description.
+- Added error message for transactionDate.
+- Added error message for type.
+- Tested that the transactions page opens correctly.
+
+### What is unclear
+
+- Need more practice with custom validation messages.
+
+### What I need to repeat
+
+- #fields.hasAnyErrors()
+- #fields.hasErrors('fieldName')
+- th:errors
+- field-level validation
+- Bootstrap text-danger
+
+### Next step
+
+- Add custom validation messages.
