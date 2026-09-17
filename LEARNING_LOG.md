@@ -507,3 +507,37 @@
 ### Next step
 
 - Add custom validation messages.
+## 2026-09-17
+
+### What I learned
+
+- How to add custom validation messages.
+- What message parameter means in validation annotations.
+- What value parameter means in @DecimalMin.
+- Why custom validation messages are better for users.
+- How backend validation messages are connected to Thymeleaf th:errors.
+
+### What I practiced
+
+- Added custom message to @NotNull for amount.
+- Added custom message to @DecimalMin for amount.
+- Added custom message to @NotBlank for description.
+- Added custom message to @NotNull for transactionDate.
+- Added custom message to @NotNull for transaction type.
+
+### What is unclear
+
+- Need more practice with testing backend validation when frontend validation exists.
+
+### What I need to repeat
+
+- message parameter
+- value parameter
+- @NotNull
+- @NotBlank
+- @DecimalMin
+- th:errors
+
+### Next step
+
+- Add transaction sorting by date.

@@ -22,17 +22,17 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
-    @DecimalMin("0.01")
+    @NotNull(message = "Amount is required.")
+    @DecimalMin(value = "0.01", message = "Amount must be at least 0.01.")
     private BigDecimal amount;
 
-    @NotBlank
+    @NotBlank(message = "Description is required.")
     private String description;
 
-    @NotNull
+    @NotNull(message = "Transaction date is required.")
     private LocalDate transactionDate;
 
-    @NotNull
+    @NotNull(message = "Type is required.")
     @Enumerated(EnumType.STRING)
     private TransactionType type;
 

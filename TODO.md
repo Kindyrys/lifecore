@@ -52,7 +52,8 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Bind transaction form with th:object
 - [x] Replace form name attributes with th:field
 - [x] Display field-level validation errors in transaction form
-
+- [x] Add custom validation messages to Transaction
+- 
 ---
 
 ## Base package structure
