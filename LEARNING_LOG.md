@@ -541,3 +541,35 @@
 ### Next step
 
 - Add transaction sorting by date.
+## 2026-09-18
+
+### What I learned
+
+- How to sort data with Spring Data JPA.
+- What Sort.by() does.
+- Difference between ASC and DESC sorting.
+- Why Sort uses Java entity field names.
+- Why sorting should be done before data reaches the HTML template.
+
+### What I practiced
+
+- Added Sort to FinanceService.
+- Sorted transactions by transactionDate.
+- Used Sort.Direction.DESC.
+- Tested that newer transactions appear first.
+
+### What is unclear
+
+- Need more practice with sorting by multiple fields.
+
+### What I need to repeat
+
+- Sort.by()
+- Sort.Direction.ASC
+- Sort.Direction.DESC
+- Entity field names
+- Service layer responsibility
+
+### Next step
+
+- Add sorting by date and id for stable order.

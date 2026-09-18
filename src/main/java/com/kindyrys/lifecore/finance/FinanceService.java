@@ -1,5 +1,6 @@
 package com.kindyrys.lifecore.finance;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public class FinanceService {
     }
 
     public List<Transaction> getAllTransactions() {
-        return transactionRepository.findAll();
+        return transactionRepository.findAll(Sort.by(Sort.Direction.DESC, "transactionDate"));
     }
 
     public void saveTransaction(Transaction transaction) {

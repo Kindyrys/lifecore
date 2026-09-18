@@ -53,7 +53,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Replace form name attributes with th:field
 - [x] Display field-level validation errors in transaction form
 - [x] Add custom validation messages to Transaction
-- 
+- [x] Sort transactions by date descending
 ---
 
 ## Base package structure
