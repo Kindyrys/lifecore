@@ -15,7 +15,10 @@ public class FinanceService {
     }
 
     public List<Transaction> getAllTransactions() {
-        return transactionRepository.findAll(Sort.by(Sort.Direction.DESC, "transactionDate"));
+        return transactionRepository.findAll
+                (Sort.by(Sort.Direction.DESC, "transactionDate")
+                .and(Sort.by(Sort.Direction.DESC, "id"))
+        );
     }
 
     public void saveTransaction(Transaction transaction) {

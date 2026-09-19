@@ -573,3 +573,34 @@
 ### Next step
 
 - Add sorting by date and id for stable order.
+
+## 2026-09-19
+
+### What I learned
+
+- What stable sorting means.
+- How to combine multiple Sort rules.
+- How .and() works with Spring Data Sort.
+- Why sorting by id helps when dates are the same.
+
+### What I practiced
+
+- Added secondary sorting by id.
+- Tested transactions with the same date.
+- Verified that newer id appears first when transactionDate is the same.
+
+### What is unclear
+
+- Need more practice with multiple sorting fields.
+
+### What I need to repeat
+
+- Sort.by()
+- .and()
+- Sort.Direction.DESC
+- sorting by date
+- sorting by id
+
+### Next step
+
+- Add delete transaction functionality.

@@ -54,6 +54,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Display field-level validation errors in transaction form
 - [x] Add custom validation messages to Transaction
 - [x] Sort transactions by date descending
+- [x] Add stable sorting by date and id
 ---
 
 ## Base package structure
