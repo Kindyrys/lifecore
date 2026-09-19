@@ -19,6 +19,7 @@
         <th>Description</th>
         <th>Date</th>
         <th>Type</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -28,6 +29,13 @@
         <td th:text="${transaction.description}"></td>
         <td th:text="${transaction.transactionDate}"></td>
         <td th:text="${transaction.type}"></td>
+        <td>
+            <form method="post" th:action="@{/finance/transactions/{id}/delete(id=${transaction.id})}">
+                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+
+            </form>
+        </td>
     </tr>
     </tbody>
 </table>

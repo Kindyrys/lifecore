@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import jakarta.validation.Valid;
 
@@ -34,6 +35,12 @@ public class FinanceController {
             return "finance/transactions";
         }
         financeService.saveTransaction(transaction);
+        return "redirect:/finance/transactions";
+    }
+
+    @PostMapping("/finance/transactions/{id}/delete")
+    public String deleteTransaction(@PathVariable Long id) {
+        financeService.deleteTransactionById(id);
         return "redirect:/finance/transactions";
     }
 }

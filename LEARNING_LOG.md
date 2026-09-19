@@ -604,3 +604,39 @@
 ### Next step
 
 - Add delete transaction functionality.
+## 2026-09-19
+
+### What I learned
+
+- How delete flow works in Spring MVC.
+- What @PathVariable does.
+- How to pass id from URL to Controller.
+- How JpaRepository deleteById() works.
+- How Thymeleaf builds dynamic URLs.
+- Why delete form needs CSRF token.
+- Why redirect is used after delete.
+
+### What I practiced
+
+- Added deleteTransactionById() to FinanceService.
+- Added POST delete endpoint to FinanceController.
+- Added Delete button to transactions table.
+- Added CSRF token to delete form.
+- Tested deleting transaction from PostgreSQL.
+
+### What is unclear
+
+- Need more practice with dynamic Thymeleaf URLs.
+
+### What I need to repeat
+
+- @PathVariable
+- deleteById()
+- th:action
+- dynamic URL parameters
+- CSRF token
+- redirect after POST
+
+### Next step
+
+- Add delete confirmation.

@@ -17,11 +17,15 @@ public class FinanceService {
     public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll
                 (Sort.by(Sort.Direction.DESC, "transactionDate")
-                .and(Sort.by(Sort.Direction.DESC, "id"))
+                     .and(Sort.by(Sort.Direction.DESC, "id"))
         );
     }
 
     public void saveTransaction(Transaction transaction) {
         transactionRepository.save(transaction);
+    }
+
+    public void deleteTransactionById(Long id) {
+        transactionRepository.deleteById(id);
     }
 }
