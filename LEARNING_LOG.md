@@ -640,3 +640,33 @@
 ### Next step
 
 - Add delete confirmation.
+## 2026-09-20
+
+### What I learned
+
+- How browser confirm dialog works.
+- What onclick does.
+- Why return confirm(...) controls form submission.
+- How to prevent accidental delete actions.
+
+### What I practiced
+
+- Added delete confirmation to Delete button.
+- Tested Cancel behavior.
+- Tested OK behavior.
+
+### What is unclear
+
+- Need more practice with basic JavaScript events in HTML.
+
+### What I need to repeat
+
+- onclick
+- confirm()
+- return true
+- return false
+- form submit behavior
+
+### Next step
+
+- Improve transaction table layout.
