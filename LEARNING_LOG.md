@@ -670,3 +670,33 @@
 ### Next step
 
 - Improve transaction table layout.
+## 2026-09-20
+
+### What I learned
+
+- How Bootstrap table-responsive works.
+- How align-middle improves table readability.
+- How text-end aligns numeric values.
+- Why amount values are usually aligned to the right.
+
+### What I practiced
+
+- Wrapped transactions table with table-responsive.
+- Added align-middle to the table.
+- Aligned amount header and values to the right.
+- Cleaned up delete button markup.
+
+### What is unclear
+
+- Need more practice with Bootstrap table utilities.
+
+### What I need to repeat
+
+- table-responsive
+- align-middle
+- text-end
+- Bootstrap table classes
+
+### Next step
+
+- Improve transaction form layout.

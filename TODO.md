@@ -60,7 +60,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Add delete button to transactions table
 - [x] Delete transaction from PostgreSQL
 - [x] Add delete confirmation
-- 
+- [x] Improve transaction table layout
 ---
 
 ## Base package structure
