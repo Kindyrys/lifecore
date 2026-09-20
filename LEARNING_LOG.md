@@ -700,3 +700,34 @@
 ### Next step
 
 - Improve transaction form layout.
+## 2026-09-20
+
+### What I learned
+
+- How Bootstrap card layout works.
+- How card-body adds spacing inside a card.
+- How card-title is used for card headings.
+- How mb-3 improves spacing between elements.
+
+### What I practiced
+
+- Wrapped transaction form in a Bootstrap card.
+- Added Add transaction heading.
+- Removed unnecessary margin class from the form.
+- Improved visual separation between form and table.
+
+### What is unclear
+
+- Need more practice with Bootstrap card components.
+
+### What I need to repeat
+
+- card
+- card-body
+- card-title
+- mb-3
+- form layout
+
+### Next step
+
+- Add a small page navigation link from home page to transactions page.
