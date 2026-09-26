@@ -62,6 +62,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Add delete confirmation
 - [x] Improve transaction table layout
 - [x] Improve transaction form layout
+- [x] Add finance summary
 ---
 
 ## Base package structure

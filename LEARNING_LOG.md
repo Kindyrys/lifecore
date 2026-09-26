@@ -731,3 +731,37 @@
 ### Next step
 
 - Add a small page navigation link from home page to transactions page.
+## 2026-09-26
+
+### What I learned
+
+- How to calculate total income in the service layer.
+- How to calculate total expenses in the service layer.
+- How to calculate balance using BigDecimal subtract().
+- Why BigDecimal is used for financial calculations.
+- Why summary model attributes are needed in both GET and validation error POST flows.
+
+### What I practiced
+
+- Added finance summary methods to FinanceService.
+- Passed summary values from FinanceController to Thymeleaf.
+- Displayed total income, total expenses and balance on the transactions page.
+- Tested summary values with valid transactions.
+- Tested validation errors without breaking summary display.
+
+### What is unclear
+
+- Need more practice with Model attributes in POST validation flows.
+
+### What I need to repeat
+
+- BigDecimal add()
+- BigDecimal subtract()
+- immutable objects
+- model.addAttribute()
+- Service layer responsibility
+- Controller vs Service
+
+### Next step
+
+- Refactor duplicated summary model attributes into a helper method.

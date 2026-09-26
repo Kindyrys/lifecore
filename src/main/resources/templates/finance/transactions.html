@@ -11,6 +11,34 @@
 <p th:if="${#lists.isEmpty(transactions)}">
     No transactions yet.
 </p>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="h6 card-title">Total income</h2>
+                <p class="fs-4 mb-0" th:text="${totalIncome}">0.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="h6 card-title">Total expenses</h2>
+                <p class="fs-4 mb-0" th:text="${totalExpenses}">0.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="h6 card-title">Balance</h2>
+                <p class="fs-4 mb-0" th:text="${balance}">0.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="table-responsive" th:if="${!#lists.isEmpty(transactions)}">
     <table class="table table-striped align-middle">
         <thead>
