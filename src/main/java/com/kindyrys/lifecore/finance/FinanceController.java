@@ -19,13 +19,17 @@ public class FinanceController {
         this.financeService = financeService;
     }
 
+    private void addFinanceSummaryToModel(Model model) {
+        model.addAttribute("totalIncome", financeService.calculateTotalIncome());
+        model.addAttribute("totalExpenses", financeService.calculateTotalExpenses());
+        model.addAttribute("balance", financeService.calculateBalance());
+    }
+
     @GetMapping("/finance/transactions")
     public String showTransactionsPage(Model model) {
         model.addAttribute("transactions", financeService.getAllTransactions());
         model.addAttribute("transaction", new Transaction());
-        model.addAttribute("totalIncome", financeService.calculateTotalIncome());
-        model.addAttribute("totalExpenses", financeService.calculateTotalExpenses());
-        model.addAttribute("balance", financeService.calculateBalance());
+        addFinanceSummaryToModel(model);
         return "finance/transactions";
     }
 
@@ -35,9 +39,7 @@ public class FinanceController {
                                  Model model) {
         if (bindingResult.hasErrors()) {
             model.addAttribute("transactions", financeService.getAllTransactions());
-            model.addAttribute("totalIncome", financeService.calculateTotalIncome());
-            model.addAttribute("totalExpenses", financeService.calculateTotalExpenses());
-            model.addAttribute("balance", financeService.calculateBalance());
+            addFinanceSummaryToModel(model);
             return "finance/transactions";
         }
         financeService.saveTransaction(transaction);

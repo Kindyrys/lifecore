@@ -765,3 +765,36 @@
 ### Next step
 
 - Refactor duplicated summary model attributes into a helper method.
+
+## 2026-09-27
+
+### What I learned
+
+- What a helper method is.
+- How helper methods reduce duplicated code.
+- Why private methods are used for internal controller logic.
+- Why void methods can still modify objects passed as parameters.
+- How to keep Model attributes consistent between GET and POST validation flows.
+
+### What I practiced
+
+- Refactored duplicated finance summary model attributes.
+- Created a private helper method in FinanceController.
+- Reused the helper method in GET and POST validation flows.
+- Verified that summary still works after refactoring.
+
+### What is unclear
+
+- Need more practice deciding when to extract helper methods.
+
+### What I need to repeat
+
+- private methods
+- void methods
+- helper methods
+- refactoring duplicated code
+- Model attributes
+
+### Next step
+
+- Decide next Finance MVP feature: edit transaction, category, or tests.
