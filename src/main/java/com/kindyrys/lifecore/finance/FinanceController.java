@@ -51,4 +51,10 @@ public class FinanceController {
         financeService.deleteTransactionById(id);
         return "redirect:/finance/transactions";
     }
+
+    @GetMapping("/finance/transactions/{id}/edit")
+    public String showEditTransactionPage(@PathVariable Long id, Model model) {
+        model.addAttribute("transaction", financeService.getTransactionById(id));
+        return "finance/transaction-edit";
+    }
 }

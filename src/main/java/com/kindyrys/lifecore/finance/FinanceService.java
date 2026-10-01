@@ -56,4 +56,8 @@ public class FinanceService {
         BigDecimal expenses = calculateTotalExpenses();
         return income.subtract(expenses);
     }
+
+    public Transaction getTransactionById(Long id) {
+        return transactionRepository.findById(id).orElseThrow();
+    }
 }
