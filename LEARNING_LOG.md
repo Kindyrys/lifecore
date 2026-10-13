@@ -798,3 +798,43 @@
 ### Next step
 
 - Decide next Finance MVP feature: edit transaction, category, or tests.
+## 2026-10-13
+
+### What I learned
+
+- How to create an edit page for an existing transaction.
+- How to use @PathVariable to get an id from the URL.
+- How to use th:action with a dynamic id in Thymeleaf.
+- Why update forms need POST requests.
+- Why transaction.setId(id) is needed before saving an edited entity.
+- How Post/Redirect/Get works after a successful update.
+- How to use d-flex and gap-2 to align action buttons.
+
+### What I practiced
+
+- Added getTransactionById() in FinanceService.
+- Added GET endpoint for the edit transaction page.
+- Created transaction-edit.html.
+- Added POST endpoint for saving edited transactions.
+- Added Edit button to the transactions table.
+- Improved Actions column layout.
+- Tested edit page, validation, save flow and redirect.
+
+### What is unclear
+
+- Need more practice with dynamic Thymeleaf URLs.
+
+### What I need to repeat
+
+- @PathVariable
+- th:action
+- th:href
+- @Valid
+- BindingResult
+- transaction.setId(id)
+- redirect after POST
+- Bootstrap d-flex and gap classes
+
+### Next step
+
+- Add categories for transactions.

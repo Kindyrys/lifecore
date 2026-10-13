@@ -64,6 +64,7 @@ Stage 1 — Project organization and Spring Boot setup
 - [x] Improve transaction form layout
 - [x] Add finance summary
 - [x] Refactor finance summary model attributes
+- [x] Add transaction edit flow
 
 ## Base package structure
 

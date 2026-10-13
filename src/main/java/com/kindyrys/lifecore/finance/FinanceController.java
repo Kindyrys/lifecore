@@ -57,4 +57,16 @@ public class FinanceController {
         model.addAttribute("transaction", financeService.getTransactionById(id));
         return "finance/transaction-edit";
     }
+
+    @PostMapping("/finance/transactions/{id}/edit")
+    public String saveEditedTransaction(@PathVariable Long id,
+                                        @Valid @ModelAttribute Transaction transaction,
+                                        BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "finance/transaction-edit";
+        }
+        transaction.setId(id);
+        financeService.saveTransaction(transaction);
+        return "redirect:/finance/transactions";
+    }
 }
